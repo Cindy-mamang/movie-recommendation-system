@@ -1,3 +1,4 @@
+st.write("App started successfully!")
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -12,7 +13,7 @@ from sklearn.metrics import (
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Load data
-df = pd.read_csv("tmdb_5000_movies.csv")
+df = pd.read_csv("tmdb_small.csv")
 
 # Extract genres from string to list
 def extract_genres(genre_str):
